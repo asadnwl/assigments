@@ -71,3 +71,14 @@ print(f"\nStudent obtain {obtainmarks} marks out of {totalmarks}")
 # percentage
 percentage = (obtainmarks / totalmarks) * 100
 print(f"Student get {percentage}% marks")
+
+# Question No: 04
+print("\nQuestion No: 04\n")
+
+# Get temperature in fahrenheit
+tempinfahrenheit = int(input("Enter temperature in fahrenheit(f):"))
+
+# covert into centigrade
+tempincentigrade = (tempinfahrenheit - 32) * (5 / 9)
+roundcentigrade = round(tempincentigrade, 1)
+print("Temperature of", tempinfahrenheit, "f in centigrade is", roundcentigrade,"C")
