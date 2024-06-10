@@ -79,6 +79,54 @@ print("\nQuestion No: 04\n")
 tempinfahrenheit = int(input("Enter temperature in fahrenheit(f):"))
 
 # covert into centigrade
-tempincentigrade = (tempinfahrenheit - 32) * (5 / 9)
-roundcentigrade = round(tempincentigrade, 1)
-print("Temperature of", tempinfahrenheit, "f in centigrade is", roundcentigrade,"C")
+tempincentigrade = round((tempinfahrenheit - 32) * (5 / 9), 1)
+# roundcentigrade = round(tempincentigrade, 1)
+print("Temperature of", tempinfahrenheit, "f in centigrade is", tempincentigrade,"C")
+
+# Question No: 05
+print("\nQuestion No: 05\n")
+
+# Get length & width from user
+length = float(input("Enter length of a rectangle in meter: "))
+width = float(input("Enter width of rectangle in meter: "))
+
+# Area of rectangle
+area = length * width
+print(f"Area of rectangle is {area} meter square")
+
+# Perimeter of rectangle
+perimeter = (2 * length) + (2 * width)
+print(f"Perimeter of rectangle is {perimeter} meter")
+
+# Question No: 06
+print("\nQuestion No: 06\n")
+
+base = int(input("Enter base: "))
+exponent = int(input("Enter exponent: "))
+
+times = base ** exponent
+print(f"The {base} of times is: {times}")
+
+# Question No: 07
+print("\nQuestion No: 07\n")
+
+num = int(input("Enter 5 digit number: "))
+numssum = 0
+
+while num > 0:
+    digit = num%10
+    numssum += digit
+    num = int(num/10)
+
+print(numssum)
+
+# Question No: 08
+print("\nQuestion No: 08\n")
+
+PI = 3.14159
+radius = float(input("Enter radius of a circle: "))
+
+print("Diameter of circle is %f", 2*radius)
+print("Circumference of circle is %f", (2*PI*radius))
+print("Area of circle is %f", (PI*(radius**2)))
+
