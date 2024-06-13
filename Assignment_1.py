@@ -261,9 +261,9 @@ print("\nQuestion No: 16\n")
 
 angle1, angle2, angle3 = map(int, input("Enter three angles of triangle: ").split())
 
-anglesum = angle1 + angle2 + angle3
+angle_sum = angle1 + angle2 + angle3
 
-if anglesum == 180:
+if angle_sum == 180:
     print("This triangle is valid.")
 else:
     print("This triangle is not a valid triangle.")
